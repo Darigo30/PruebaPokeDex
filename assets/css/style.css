@@ -1,0 +1,118 @@
+body{
+    background: url(../../assets/img/bg-body.jpg);
+    box-sizing: border-box;
+}
+section{
+    margin-top: 25px;
+}
+.logo-pokeapi{
+    width: 120px;
+}
+.pokemones{
+    background-color: #fff;
+    border-radius: 75px;
+    height: 660px;
+    border: 3px solid #FC0;
+    position: relative;
+}
+.img-poke-ball{
+    position: absolute;
+    z-index: 1;
+    top: -35px;
+    width: 100%;
+    max-width: 350px;
+    left: 135px;
+}
+.logo-poke{
+    width: 100%;
+    max-width: 160px;
+    margin-bottom: 5px;
+}
+.btn-buscar-poke{
+    width: 260px;
+    background-color: #D33F59;
+    border: none;
+    border-radius: 25px;
+    height: 50px;
+    color: #fff;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+}
+.btn-buscar-poke:hover{
+    background-color:#FFCC00;
+}
+.form-select.select-poke{
+    width: 260px;
+    height: 50px;
+    border-radius: 12px;
+    border: 2px solid #BF1E2E;
+    color: #BF1E2E;
+    cursor: pointer;
+}
+.h-tit {
+    color: #000000;
+    text-align: center;
+    text-transform: uppercase;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+
+}
+.dat-pok{
+    font-size: 18px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    color:#d33f59;
+}
+span{
+    border: 2px solid #BF1E2E;
+    max-width: 63px;
+    width: 100%;
+    display: block;
+    margin: 0 auto;
+}
+.poke-front{
+    margin-right: 15px;
+}
+.numerpoke{
+    margin-left: 5px;
+    color: #1663B1;
+}
+.vis{
+    color: #1663B1;
+}
+.dat-po-l{
+    font-size: 14px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin: 5px 0;
+}
+.canvasjs-chart-canvas{
+    width: 100%;
+    max-width: 190px;
+}
+.fotos-poke{
+    display: flex;
+}
+
+/*Medias Querys*/
+
+@media (max-width: 1199px) {
+    .img-poke-ball{left: 55px;}
+    .form-select.select-poke{width: 100%;}
+}
+@media (max-width: 991px) {
+    .img-poke-ball {left: 25px;max-width: 260px;}
+    .dat-pok{font-size: 16px;}
+    .btn-buscar-poke{width: 190px;}
+    .poke-front {margin-right: -8px;}
+}
+@media (max-width: 767px) {
+    .btn-buscar-poke {width: 100%;}
+    .pokemones{height: auto;}
+    .pokemones{border-radius: 15px;}
+}
+@media (max-width: 576px) {
+    .fotos-poke {display: flex;margin: 0 auto;text-align: center;justify-content: space-evenly;}
+    .btn-buscar-poke {margin-top: 15px;}
+}
